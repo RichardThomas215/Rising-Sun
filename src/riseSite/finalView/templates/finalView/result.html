@@ -3,6 +3,53 @@
 {% block title %}Search{% endblock title %}
 
 {% block content %}
+{% for event in events %}
 
-hello
+<br>
+<div class="container">
+    <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{event.task_1.name}}</h5>
+            <h6 class="card-title">{{event.task_1.key_player.name}}</h6>
+            <h7 class="card-text">{{event.task_1.key_player.name}}</h7>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{event.task_2.name}}</h5>
+            <h6 class="card-title">{{event.task_2.key_player.name}}</h6>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{event.task_3.name}}</h5>
+            <h6 class="card-title">{{event.task_3.key_player.name}}</h6>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{event.task_4.name}}</h5>
+              <h6 class="card-title">{{event.task_4.key_player.name}}</h6>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{event.task_5.name}}</h5>
+                <h6 class="card-title">{{event.task_5.key_player.name}}</h6>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+      </div>
+      <br>
+</div>
+{%endfor%}
 {% endblock content %}
