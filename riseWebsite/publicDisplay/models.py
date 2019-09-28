@@ -27,3 +27,7 @@ class Task(models.Model):
 class keyPlayers(models.Model):
     name = models.CharField(max_length=100)
     position = models.CharField(max_length=100)
+
+class Issue(models.Model):
+    issueName = models.CharField(max_length=100)
+    Description = models.CharField(max_lenght=100)
