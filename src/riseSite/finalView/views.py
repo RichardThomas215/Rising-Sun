@@ -11,3 +11,6 @@ def search(req):
 
 def contact(req):
     return render(req, 'finalView/contact.html')
+
+def result(req):
+    return render(req, 'finalView/result.html')
