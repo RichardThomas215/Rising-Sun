@@ -1,3 +1,5 @@
+.DS_Store # sry this is necessary when we got 4 macs on the team
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
