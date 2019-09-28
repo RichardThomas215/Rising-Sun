@@ -9,10 +9,7 @@ def base(req):
     return render(req, 'finalView/base.html')
 
 def search(req):
-    context_dict={}
-    issues = Issue.objects.all()
-    context_dict['issues']=issues
-    return render(req, 'finalView/search.html', context_dict)
+    return render(req, 'finalView/search.html')
 
 def contact(req):
     return render(req, 'finalView/contact.html')
