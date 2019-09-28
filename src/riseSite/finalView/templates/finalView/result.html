@@ -1,0 +1,86 @@
+{% extends "finalView/base.html" %}
+{% load static %}
+{% block title %}Search{% endblock title %}
+
+{% block content %}
+{% for event in events %}
+
+<br>
+<style>
+.card-body{
+  text-align: center;
+  vertical-align: 50%;
+}
+h3{
+  color:rgb(228, 102, 5);
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(27, 126, 97, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<div class="container">
+    <h3><b>{{event.name}}</b></h3>
+    <hr>
+    <h6>{{event.task_detail}}</h6>
+    <br>
+  <div class="card-deck">
+    <div class="card border-danger">
+      <div class="card-body">
+        <h5 class="card-title">{{event.task_1.name}}</h5>
+        <hr>
+        <h6 class="card-title">{{event.task_1.key_player.name}}</h6>
+        <hr>
+        <h7 class="card-text">{{event.task_1.notes}}</h7>
+        <hr>
+        <h5 class="card-text"><small ><b>DEADLINE</b><br>{{event.task_1.deadline}}</small></h5>
+      </div>
+    </div>
+    <div class="card border-info">
+      <div class="card-body">
+        <h5 class="card-title">{{event.task_2.name}}</h5>
+        <hr>
+        <h6 class="card-title">{{event.task_2.key_player.name}}</h6>
+        <hr>
+        <h7 class="card-text">{{event.task_2.notes}}</h7>
+        <hr>
+        <h5 class="card-text"><small ><b>DEADLINE</b><br>{{event.task_2.deadline}}</small></h5>
+      </div>
+    </div>
+    <div class="card border-info">
+      <div class="card-body">
+        <h5 class="card-title">{{event.task_3.name}}</h5>
+        <hr>
+        <h6 class="card-title">{{event.task_3.key_player.name}}</h6>
+        <hr>
+        <h7 class="card-text">{{event.task_3.notes}}</h7>
+        <hr>
+        <h5 class="card-text"><small ><b>DEADLINE</b><br>{{event.task_3.deadline}}</small></h5>
+      </div>
+    </div>
+    <div class="card border-info">
+      <div class="card-body">
+        <h5 class="card-title">{{event.task_4.name}}</h5>
+        <hr>
+        <h6 class="card-title">{{event.task_4.key_player.name}}</h6>
+        <hr>
+        <h7 class="card-text">{{event.task_4.notes}}</h7>
+        <hr>
+        <h5 class="card-text"><small ><b>DEADLINE</b><br>{{event.task_4.deadline}}</small></h5>
+      </div>
+    </div>
+    <div class="card border-info">
+      <div class="card-body">
+        <h5 class="card-title">{{event.task_5.name}}</h5>
+        <hr>
+        <h6 class="card-title">{{event.task_5.key_player.name}}</h6>
+        <hr>
+        <h7 class="card-text">{{event.task_5.notes}}</h7>
+        <hr>
+        <h5 class="card-text"><small ><b>DEADLINE</b><br>{{event.task_5.deadline}}</small></h5>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+{%endfor%}
+{% endblock content %}

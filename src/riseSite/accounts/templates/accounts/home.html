@@ -1,0 +1,40 @@
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <br>
+    <h1>Welcome to the <b>RISE</b> Data Network!</h1>
+    <br>
+    <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <a href="." class="btn btn-primary">Add a schedule!</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <a href="." class="btn btn-primary">Add a task!</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <a href="." class="btn btn-primary">Add key player!</a>
+                </div>
+            </div>
+    </div>
+    <br>
+    <a href="/account/logout" class="btn btn-dark">Logout</a>
+
+</div>
+{% endblock %}
