@@ -76,10 +76,9 @@
               <div class="form-group">
                 <label for="exampleFormControlSelect1">Issue Type</label>
                 <select class="form-control" id="exampleFormControlSelect1">
-                  <option value="AL">Gun Violence</option>
-                  <option value="AK">Sexual Assault</option>
-                  <option value="AZ">Homophobia</option>
-                  <option value="AZ">Religious Freedom</option>
+                    {% for issue in issues %}
+                    <option value="{{ issue.id }}">{{ issue.name }}</option>
+                    {% endfor %}
                 </select>
               </div>
 			</div>
