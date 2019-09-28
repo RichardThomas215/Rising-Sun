@@ -22,4 +22,3 @@ class Event(models.Model):
     task_3 = models.ForeignKey(Task, related_name='task3', on_delete=models.CASCADE, null=True, blank=True)
     task_4 = models.ForeignKey(Task, related_name='task4', on_delete=models.CASCADE, null=True, blank=True)
     task_5 = models.ForeignKey(Task, related_name='task5', on_delete=models.CASCADE, null=True, blank=True)
-

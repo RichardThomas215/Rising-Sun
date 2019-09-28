@@ -1,4 +1,7 @@
-from django import forms
+from django.forms import ModelForm
+from finalView.models import Event
 
-class makeScheduleForm(forms.Form):
-    
+class CreateEventForm(ModelForm):
+    class Meta:
+        model = Event
+        exclude = []
